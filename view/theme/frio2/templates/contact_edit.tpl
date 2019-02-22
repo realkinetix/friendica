@@ -22,7 +22,7 @@
 							{{if $lblsuggest}}<li role="presentation"><a role="menuitem" href="{{$contact_actions.suggest.url}}" title="{{$contact_actions.suggest.title}}">{{$contact_actions.suggest.label}}</a></li>{{/if}}
 							{{if $poll_enabled}}<li role="presentation"><a role="menuitem" href="{{$contact_actions.update.url}}" title="{{$contact_actions.update.title}}">{{$contact_actions.update.label}}</a></li>{{/if}}
 							{{if $lblsuggest || $poll_enabled}}
-							<li role="presentation" class="divider"></li>
+							<li role="presentation" class="dropdown-divider"></li>
 							{{/if}}
 							<li role="presentation"><a role="menuitem" href="{{$contact_actions.block.url}}" title="{{$contact_actions.block.title}}">{{$contact_actions.block.label}}</a></li>
 							<li role="presentation"><a role="menuitem" href="{{$contact_actions.ignore.url}}" title="{{$contact_actions.ignore.title}}">{{$contact_actions.ignore.label}}</a></li>
@@ -80,39 +80,39 @@
 						</div>
 						<div id="contact-edit-profile-collapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="contact-edit-profile">
 							<div class="section-content-tools-wrapper">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-muted">{{$profileurllabel}}</div><a target="blank" href="{{$url}}">{{$profileurl}}</a>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+									<div class="col-lg-4 col-md-4 col-sm-4 col-12 text-muted">{{$profileurllabel}}</div><a target="blank" href="{{$url}}">{{$profileurl}}</a>
 								</div>
 
 								{{if $location}}
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-12">
 									<hr class="profile-separator">
-									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-muted">{{$location_label}}</div>
-									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">{{$location nofilter}}</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-12 text-muted">{{$location_label}}</div>
+									<div class="col-lg-8 col-md-8 col-sm-8 col-12">{{$location nofilter}}</div>
 								</div>
 								{{/if}}
 
 								{{if $xmpp}}
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-12">
 									<hr class="profile-separator">
-									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-muted">{{$xmpp_label}}</div>
-									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">{{$xmpp}}</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-12 text-muted">{{$xmpp_label}}</div>
+									<div class="col-lg-8 col-md-8 col-sm-8 col-12">{{$xmpp}}</div>
 								</div>
 								{{/if}}
 
 								{{if $keywords}}
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-12">
 									<hr class="profile-separator">
-									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-muted">{{$keywords_label}}</div>
-									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">{{$keywords}}</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-12 text-muted">{{$keywords_label}}</div>
+									<div class="col-lg-8 col-md-8 col-sm-8 col-12">{{$keywords}}</div>
 								</div>
 								{{/if}}
 
 								{{if $about}}
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-12">
 									<hr class="profile-separator">
-									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-muted">{{$about_label}}</div>
-									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">{{$about nofilter}}</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-12 text-muted">{{$about_label}}</div>
+									<div class="col-lg-8 col-md-8 col-sm-8 col-12">{{$about nofilter}}</div>
 								</div>
 								{{/if}}
 							</div>

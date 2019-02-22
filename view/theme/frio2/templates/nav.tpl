@@ -18,7 +18,7 @@
 </header>
 <nav id="topbar-first" class="topbar">
 	<div class="container">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding"><!-- div for navbar width-->
+		<div class="col-lg-12 col-md-12 col-sm-12 col-12 no-padding"><!-- div for navbar width-->
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="topbar-nav" role="navigation">
 
@@ -132,50 +132,50 @@
 						{{* The list of available usermenu links *}}
 						<ul id="nav-user-menu" class="dropdown-menu pull-right menu-popup" role="menu" aria-labelledby="main-menu">
 							{{if $nav.remote}}{{if $nav.sitename}}
-							<li id="nav-sitename" role="menuitem">{{$nav.sitename}}</li>
-							<li role="presentation" class="divider"></li>
+							<li id="nav-sitename" role="menuitem" class="dropdown-item">{{$nav.sitename}}</li>
+							<li role="presentation" class="dropdown-divider"></li>
 							{{/if}}{{/if}}
 							{{foreach $nav.usermenu as $usermenu}}
-							<li role="presentation"><a role="menuitem" class="{{$usermenu.2}}" href="{{$usermenu.0}}" title="{{$usermenu.3}}">{{$usermenu.1}}</a></li>
+							<li role="presentation"><a role="menuitem" class="{{$usermenu.2}} dropdown-item" href="{{$usermenu.0}}" title="{{$usermenu.3}}">{{$usermenu.1}}</a></li>
 							{{/foreach}}
-							<li role="presentation" class="divider"></li>
+							<li role="presentation" class="dropdown-divider"></li>
 							{{if $nav.notifications}}
-							<li role="presentation"><a role="menuitem" href="{{$nav.notifications.all.0}}" title="{{$nav.notifications.1}}"><i class="fa fa-exclamation-circle fa-fw" aria-hidden="true"></i> {{$nav.notifications.1}}</a></li>
+							<li role="presentation"><a role="menuitem" class="dropdown-item" href="{{$nav.notifications.all.0}}" title="{{$nav.notifications.1}}"><i class="fa fa-exclamation-circle fa-fw" aria-hidden="true"></i> {{$nav.notifications.1}}</a></li>
 							{{/if}}
 							{{if $nav.messages}}
-							<li role="presentation"><a role="menuitem" class="nav-commlink {{$nav.messages.2}} {{$sel.messages}}" href="{{$nav.messages.0}}" title="{{$nav.messages.3}}" ><i class="fa fa-envelope fa-fw" aria-hidden="true"></i> {{$nav.messages.1}} <span id="mail-update-li" class="nav-mail-badge badge nav-notify"></span></a></li>
+							<li role="presentation"><a role="menuitem" class="dropdown-item nav-commlink {{$nav.messages.2}} {{$sel.messages}}" href="{{$nav.messages.0}}" title="{{$nav.messages.3}}" ><i class="fa fa-envelope fa-fw" aria-hidden="true"></i> {{$nav.messages.1}} <span id="mail-update-li" class="nav-mail-badge badge nav-notify"></span></a></li>
 							{{/if}}
-							<li role="presentation" class="divider"></li>
+							<li role="presentation" class="dropdown-divider"></li>
 							{{if $nav.contacts}}
-							<li role="presentation"><a role="menuitem" id="nav-menu-contacts-link" class="nav-link {{$nav.contacts.2}}" href="{{$nav.contacts.0}}" title="{{$nav.contacts.3}}"><i class="fa fa-users fa-fw" aria-hidden="true"></i> {{$nav.contacts.1}}</a><span id="intro-update-li" class="nav-intro-badge badge nav-notify"></span></li>
+							<li role="presentation"><a role="menuitem" id="nav-menu-contacts-link" class="dropdown-item nav-link {{$nav.contacts.2}}" href="{{$nav.contacts.0}}" title="{{$nav.contacts.3}}"><i class="fa fa-users fa-fw" aria-hidden="true"></i> {{$nav.contacts.1}}</a><span id="intro-update-li" class="nav-intro-badge badge nav-notify"></span></li>
 							{{/if}}
 							{{if $nav.manage}}
-							<li role="presentation"><a role="menuitem" id="nav-manage-link" class="nav-commlink {{$nav.manage.2}} {{$sel.manage}}" href="{{$nav.manage.0}}" title="{{$nav.manage.3}}"><i class="fa fa-flag fa-fw" aria-hidden="true"></i> {{$nav.manage.1}}</a></li>
+							<li role="presentation"><a role="menuitem" id="nav-manage-link" class="dropdown-item nav-commlink {{$nav.manage.2}} {{$sel.manage}}" href="{{$nav.manage.0}}" title="{{$nav.manage.3}}"><i class="fa fa-flag fa-fw" aria-hidden="true"></i> {{$nav.manage.1}}</a></li>
 							{{/if}}
-							<li role="presentation"><a role="menuitem" id="nav-directory-link" class="nav-link {{$nav.directory.2}}" href="{{$nav.directory.0}}" title="{{$nav.directory.3}}"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i>{{$nav.directory.1}}</a></li>
-							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" id="nav-directory-link" class="dropdown-item nav-link {{$nav.directory.2}}" href="{{$nav.directory.0}}" title="{{$nav.directory.3}}"><i class="fa fa-sitemap fa-fw" aria-hidden="true"></i>{{$nav.directory.1}}</a></li>
+							<li role="presentation" class="dropdown-divider"></li>
 							{{if $nav.apps}}
-							<li role="presentation"><a role="menuitem" id="nav-apps-link" class="nav-link {{$nav.apps.2}} {{$sel.manage}}" href="{{$nav.apps.0}}" title="{{$nav.apps.3}}" ><i class="fa fa-puzzle-piece fa-fw" aria-hidden="true"></i> {{$nav.apps.1}}</a>
-							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" id="nav-apps-link" class="dropdown-item nav-link {{$nav.apps.2}} {{$sel.manage}}" href="{{$nav.apps.0}}" title="{{$nav.apps.3}}" ><i class="fa fa-puzzle-piece fa-fw" aria-hidden="true"></i> {{$nav.apps.1}}</a>
+							<li role="presentation" class="dropdown-divider"></li>
 							{{/if}}
 							{{if $nav.help}}
-							<li role="presentation"><a role="menuitem" id="nav-help-link" class="nav-link {{$nav.help.2}}" href="{{$nav.help.0}}" title="{{$nav.help.3}}" ><i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> {{$nav.help.1}}</a></li>
+							<li role="presentation"><a role="menuitem" id="nav-help-link" class="dropdown-item nav-link {{$nav.help.2}}" href="{{$nav.help.0}}" title="{{$nav.help.3}}" ><i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> {{$nav.help.1}}</a></li>
 							{{/if}}
 							{{if $nav.settings}}
-							<li role="presentation"><a role="menuitem" id="nav-settings-link" class="nav-link {{$nav.settings.2}}" href="{{$nav.settings.0}}" title="{{$nav.settings.3}}"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> {{$nav.settings.1}}</a></li>
+							<li role="presentation"><a role="menuitem" id="nav-settings-link" class="dropdown-item nav-link {{$nav.settings.2}}" href="{{$nav.settings.0}}" title="{{$nav.settings.3}}"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> {{$nav.settings.1}}</a></li>
 							{{/if}}
 							{{if $nav.admin}}
-							<li role="presentation"><a accesskey="a" role="menuitem" id="nav-admin-link" class="nav-link {{$nav.admin.2}}" href="{{$nav.admin.0}}" title="{{$nav.admin.3}}" ><i class="fa fa-user-secret fa-fw" aria-hidden="true"></i> {{$nav.admin.1}}</a></li>
+							<li role="presentation"><a accesskey="a" role="menuitem" id="nav-admin-link" class="dropdown-item nav-link {{$nav.admin.2}}" href="{{$nav.admin.0}}" title="{{$nav.admin.3}}" ><i class="fa fa-user-secret fa-fw" aria-hidden="true"></i> {{$nav.admin.1}}</a></li>
 							{{/if}}
 							{{if $nav.tos}}
-							<li role="presentation" class="divider"></li>
-							<li role="presentation"><a role="menuitem" id="nav-tos-link" class="nav-link {{$nav.tos.2}}" href="{{$nav.tos.0}}" title="{{$nav.tos.3}}" ><i class="fa fa-file-text" aria-hidden="true"></i> {{$nav.tos.1}}</a></li>
+							<li role="presentation" class="dropdown-divider"></li>
+							<li role="presentation"><a role="menuitem" id="nav-tos-link" class="dropdown-item nav-link {{$nav.tos.2}}" href="{{$nav.tos.0}}" title="{{$nav.tos.3}}" ><i class="fa fa-file-text" aria-hidden="true"></i> {{$nav.tos.1}}</a></li>
 							{{/if}}
-							<li role="presentation" class="divider"></li>
+							<li role="presentation" class="dropdown-divider"></li>
 							{{if $nav.logout}}
-							<li role="presentation"><a role="menuitem" id="nav-logout-link" class="nav-link {{$nav.logout.2}}" href="{{$nav.logout.0}}" title="{{$nav.logout.3}}" ><i class="fa fa fa-sign-out fa-fw" aria-hidden="true"></i> {{$nav.logout.1}}</a></li>
+							<li role="presentation"><a role="menuitem" id="nav-logout-link" class="dropdown-item nav-link {{$nav.logout.2}}" href="{{$nav.logout.0}}" title="{{$nav.logout.3}}" ><i class="fa fa fa-sign-out fa-fw" aria-hidden="true"></i> {{$nav.logout.1}}</a></li>
 							{{else}}
-							<li role="presentation"><a role="menuitem" id="nav-login-link" class="nav-login-link {{$nav.login.2}}" href="{{$nav.login.0}}" title="{{$nav.login.3}}" ><i class="fa fa-power-off fa-fw" aria-hidden="true"></i> {{$nav.login.1}}</a></li>
+							<li role="presentation"><a role="menuitem" id="nav-login-link" class="dropdown-item nav-login-link {{$nav.login.2}}" href="{{$nav.login.0}}" title="{{$nav.login.3}}" ><i class="fa fa-power-off fa-fw" aria-hidden="true"></i> {{$nav.login.1}}</a></li>
 							{{/if}}
 						</ul>
 					</li>{{* End of userinfo dropdown menu *}}
@@ -275,8 +275,8 @@
 <div id="topbar-second" class="topbar">
 	<div class="container">
 		<div class="col-lg-3 col-md-3 hidden-sm hidden-xs" id="nav-short-info"></div>
-		<div class="col-lg-7 col-md-7 col-sm-11 col-xs-10" id="tabmenu"></div>
-		<div class="col-lg-2 col-md-2 col-sm-1 col-xs-2" id="navbar-button"></div>
+		<div class="col-lg-7 col-md-7 col-sm-11 col-10" id="tabmenu"></div>
+		<div class="col-lg-2 col-md-2 col-sm-1 col-2" id="navbar-button"></div>
 	</div>
 </div>
 

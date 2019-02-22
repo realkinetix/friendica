@@ -54,9 +54,9 @@ function switchGroupViewMode(elm) {
 
 		// Add or remove the css classes for the group list with regard to the active view mode
 		if (elm.id === "group-list-small") {
-			$("#contact-group-list > li").addClass("shortmode col-lg-6 col-md-6 col-sm-6 col-xs-12");
+			$("#contact-group-list > li").addClass("shortmode col-lg-6 col-md-6 col-sm-6 col-12");
 		} else {
-			$("#contact-group-list > li").removeClass("shortmode col-lg-6 col-md-6 col-sm-6 col-xs-12");
+			$("#contact-group-list > li").removeClass("shortmode col-lg-6 col-md-6 col-sm-6 col-12");
 		}
 }
 

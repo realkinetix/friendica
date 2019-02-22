@@ -36,6 +36,6 @@
     background: #333 !important;
 }
 
-.account .dropdown-menu li.divider {
+.account .dropdown-menu li.dropdown-divider {
     background: #111;
 }

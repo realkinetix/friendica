@@ -13,8 +13,8 @@
 <link rel="stylesheet" href="view/asset/jquery-datetimepicker/build/jquery.datetimepicker.min.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="view/asset/perfect-scrollbar/css/perfect-scrollbar.min.css" type="text/css" media="screen" />
 
-<link rel="stylesheet" href="view/theme/frio2/frameworks/bootstrap3/css/bootstrap.min.css" type="text/css" media="screen"/>
-<link rel="stylesheet" href="view/theme/frio2/frameworks/bootstrap3/css/bootstrap-theme.min.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="view/theme/frio2/frameworks/bootstrap4/css/bootstrap.min.css" type="text/css" media="screen"/>
+<!-- <link rel="stylesheet" href="view/theme/frio2/frameworks/bootstrap3/css/bootstrap-theme.min.css" type="text/css" media="screen"/> -->
 <link rel="stylesheet" href="view/theme/frio2/frameworks/font-awesome/css/font-awesome.min.css" type="text/css" media="screen"/>
 <link rel="stylesheet" href="view/theme/frio2/frameworks/jasny/css/jasny-bootstrap.min.css" type="text/css" media="screen"/>
 <link rel="stylesheet" href="view/theme/frio2/frameworks/bootstrap-select/css/bootstrap-select.min.css" type="text/css" media="screen"/>
@@ -67,7 +67,8 @@
 <script type="text/javascript" src="view/asset/base64/base64.min.js"></script>
 <script type="text/javascript" src="view/js/main.js"></script>
 
-<script type="text/javascript" src="view/theme/frio2/frameworks/bootstrap3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="view/theme/frio2/frameworks/bootstrap4/js/popper.min.js"></script>
+<script type="text/javascript" src="view/theme/frio2/frameworks/bootstrap4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="view/theme/frio2/frameworks/jasny/js/jasny-bootstrap.custom.js"></script>
 <script type="text/javascript" src="view/theme/frio2/frameworks/bootstrap-select/js/bootstrap-select.min.js"></script>
 <script type="text/javascript" src="view/theme/frio2/frameworks/ekko-lightbox/ekko-lightbox.min.js"></script>

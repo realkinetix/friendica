@@ -65,13 +65,13 @@
 					</table>
 					<div class="panel-footer">
 						<div class="row">
-							<div class="col-xs-3 admin-settings-footer-elements">
+							<div class="col-3 admin-settings-footer-elements">
 								<div class="checkbox">
 									<input type="checkbox" id="admin-settings-pending-select" class="selecttoggle" data-select-class="pending_ckbx"/>
 									<label for="admin-settings-pending-select"></label>
 								</div>
 							</div>
-							<div class="col-xs-9 admin-settings-footer-elements text-right">
+							<div class="col-9 admin-settings-footer-elements text-right">
 								<button type="submit" name="page_users_deny" value="1" class="btn btn-primary">
 									<i class="fa fa-trash-o" aria-hidden="true"></i> {{$deny}}
 								</button>
@@ -248,13 +248,13 @@
 					<div class="panel-footer">
 						{{if $users}}
 						<div class="row">
-							<div class="col-xs-3 admin-settings-footer-elements">
+							<div class="col-3 admin-settings-footer-elements">
 								<div class="checkbox">
 									<input type="checkbox" id="admin-settings-users-select" class="selecttoggle" data-select-class="users_ckbx"/>
 									<label for="admin-settings-users-select"></label>
 								</div>
 							</div>
-							<div class="col-xs-9 admin-settings-footer-elements text-right">
+							<div class="col-9 admin-settings-footer-elements text-right">
 								<button type="submit" name="page_users_block" value="1" class="btn btn-warning">
 									<i class="fa fa-ban" aria-hidden="true"></i> {{$block}} / <i class="fa fa-circle-o" aria-hidden="true"></i> {{$unblock}}
 								</button>

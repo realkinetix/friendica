@@ -129,7 +129,7 @@ as the value of $top_child_total (this is done at the end of this file)
 					{{/if}}
 
 					{{if $item.ignore || $item.drop.dropping}}
-					<li role="separator" class="divider"></li>
+					<li role="separator" class="dropdown-divider"></li>
 					{{/if}}
 
 					{{if $item.ignore}}

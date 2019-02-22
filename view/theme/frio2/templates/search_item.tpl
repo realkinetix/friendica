@@ -57,7 +57,7 @@
 						{{/if}}
 
 						{{if $item.drop.dropping}}
-						<li role="separator" class="divider"></li>
+						<li role="separator" class="dropdown-divider"></li>
 						<li role="menuitem">
 							<button type="button" class="btn-link navicon delete" onclick="dropItem('item/drop/{{$item.id}}', 'item-{{$item.guid}}');" title="{{$item.drop.delete}}"><i class="fa fa-trash" aria-hidden="true"></i> {{$item.drop.delete}}</button>
 						</li>

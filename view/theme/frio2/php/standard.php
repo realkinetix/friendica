@@ -38,7 +38,7 @@
 						"; include('includes/photo_side.php'); echo"
 					</aside>
 
-					<div class=\"col-lg-8 col-md-8 col-sm-12 col-xs-12\" id=\"content\">
+					<div class=\"col-lg-8 col-md-8 col-sm-12 col-12\" id=\"content\">
 						<section class=\"sectiontop\">
 								<div class=\"panel "; echo $a->argv[0]; echo "-content-wrapper\">
 									<div class=\"panel-body\">";
@@ -99,7 +99,7 @@ $("nav").bind('nav-update', function(e,data)
 </script>
 <script src="<?=$frio2?>/js/theme.js"></script>
 <script src="<?=$frio2?>/js/acl.js"></script>
-<script src="<?=$frio2?>/frameworks/bootstrap3/js/bootstrap.min.js"></script>
+<script src="<?=$frio2?>/frameworks/bootstrap4/js/bootstrap.min.js"></script>
 <script src="<?=$frio2?>/frameworks/jasny/js/jasny-bootstrap.min.js"></script>
 <script src="<?=$frio2?>/frameworks/bootstrap-select/js/bootstrap-select.min.js"></script>
 <script src="<?=$frio2?>/frameworks/ekko-lightbox/ekko-lightbox.min.js"></script>
